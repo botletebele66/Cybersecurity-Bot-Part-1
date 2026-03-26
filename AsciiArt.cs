@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 
 public static class AsciiArt
