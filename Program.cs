@@ -6,6 +6,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        // Play greeting sound
+        SoundOutput.PlayGreeting();
+
+        // Display ASCII art
+        AsciiArt.Display();
     }
 }
