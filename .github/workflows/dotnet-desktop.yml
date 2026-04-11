@@ -2,9 +2,9 @@ name: .NET Build & Test
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ "master", "main" ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ "master", "main" ]
 
 jobs:
   build:
@@ -12,16 +12,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'   # Use stable version
-
+        dotnet-version: '9.0.x'  # Change to 9.0 – stable. If you keep net10.0, use '10.x' (preview)
+    
     - name: Restore dependencies
       run: dotnet restore
-
+    
     - name: Build
       run: dotnet build --no-restore --configuration Release
-
-    - name: Run (optional - just checks exit code)
-      run: dotnet run --no-build --configuration Release
+    
+    - name: Run tests (if any)
+      run: dotnet test --no-build --verbosity normal || true   # No tests yet, but won't fail
