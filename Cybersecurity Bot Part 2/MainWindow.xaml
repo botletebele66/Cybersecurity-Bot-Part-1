@@ -1,0 +1,61 @@
+﻿<Window x:Class="CybersecurityBotPart2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cybersecurity Awareness Bot" Height="785" Width="900"
+        Background="#F5F5F5" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,-66">
+        <!-- LEFT SIDE: Chat Display -->
+        <StackPanel Orientation="Vertical" Margin="10,10,10,51">
+            <TextBlock Text="💬 Chat with Your Cybersecurity Bot" 
+                       FontSize="21" FontWeight="Bold" 
+                       Foreground="#1976D2" Margin="0,0,0,10"/>
+
+            <!-- Messages Display Area -->
+            <ScrollViewer Height="500" Background="White" 
+                         BorderThickness="1" BorderBrush="#CCCCCC">
+                <ItemsControl Name="ChatMessages" Padding="10">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" 
+                                      TextWrapping="Wrap" 
+                                      Margin="0,5" 
+                                      Foreground="#333"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+            <!-- Input Area -->
+            <TextBox Name="UserInput" Height="50" Margin="0,10,0,0" 
+                    Padding="10" TextWrapping="Wrap" 
+                    FontSize="14" Foreground="#333"/>
+
+            <Button Name="SendButton" Content="Send Message" 
+                   Click="SendButton_Click" 
+                   Height="40" Margin="0,10,0,0" 
+                   Background="#4CAF50" Foreground="White" 
+                   FontSize="14" FontWeight="Bold" 
+                   Cursor="Hand"/>
+
+            <!-- Quick Question Buttons -->
+            <TextBlock Text="Quick Questions:" FontSize="14" 
+                      FontWeight="Bold" Margin="0,15,0,5"/>
+            <WrapPanel>
+                <Button Content="About Passwords" Click="QuickQuestion_Click" 
+                       Tag="password" Margin="5" Padding="10,8" 
+                       Background="#2196F3" Foreground="White"/>
+                <Button Content="Phishing Tips" Click="QuickQuestion_Click" 
+                       Tag="phishing" Margin="5" Padding="10,8" 
+                       Background="#2196F3" Foreground="White"/>
+                <Button Content="Privacy Info" Click="QuickQuestion_Click" 
+                       Tag="privacy" Margin="5" Padding="10,8" 
+                       Background="#2196F3" Foreground="White"/>
+                <Button Content="More Tips" Click="QuickQuestion_Click" 
+                       Tag="more" Margin="5" Padding="10,8" 
+                       Background="#2196F3" Foreground="White"/>
+            </WrapPanel>
+        </StackPanel>
+
+    </Grid>
+        
+</Window>

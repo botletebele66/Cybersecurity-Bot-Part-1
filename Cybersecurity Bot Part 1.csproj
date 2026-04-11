@@ -8,4 +8,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- Provides System.Media.SoundPlayer for non-Windows.Forms projects -->
+    <PackageReference Include="System.Windows.Extensions" Version="10.0.5" />
+    <!-- High-quality audio playback library -->
+    <!-- High-quality audio playback library (NAudio latest available on nuget.org for this environment) -->
+    <PackageReference Include="NAudio" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Copy any files under Resources to output if they exist (avoids build error when file not present) -->
+    <None Include="Resources\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
