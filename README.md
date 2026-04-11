@@ -29,12 +29,11 @@ Make sure the audio file exists at `Resources/Greeting AI.wav`.
 ## CI/CD
 This project uses GitHub Actions to automatically build on every push.  
 ✅ **Latest build status:**  
-![.NET Build & Test](https://github.com/botletebele66/Cybersecurity-Bot-Part-1/actions/workflows/dotnet-build.yml/badge.svg)
+![.NET Build & Test](https://github.com/botletebele66/Cybersecurity-Bot-Part-1/commit/3975ca8bc451f93e4cb0296a7605c32580b99547#diff-1141f91ae004c9af379b5cb74bcb73f8594024a47c044c05df2fe6e2547c6585)
 
 ## Screenshot of Successful CI Run
-![CI success](screenshot-ci.png)
-<img width="1361" height="656" alt="Screenshot 2026-04-11 144827" src="https://github.com/user-attachments/assets/8ffc2bec-d3aa-41e0-b28f-b2f39e614316" />
-
+![CI success]( <img width="1361" height="656" alt="Screenshot 2026-04-11 144827" src="https://github.com/user-attachments/assets/8ffc2bec-d3aa-41e0-b28f-b2f39e614316" />
+)
 
 
 ## Folder Structure
