@@ -1,4 +1,4 @@
-# Cybersecurity Bot Part 1 – CyBrog
+<img width="1361" height="656" alt="Screenshot 2026-04-11 144827" src="https://github.com/user-attachments/assets/f46d7de7-c70a-4961-a160-169842268793" /># Cybersecurity Bot Part 1 – Cyborg
 
 A C# console chatbot that educates South African citizens about cybersecurity threats (phishing, passwords, 2FA, malware, etc.) with voice greeting, ASCII art, and interactive scenarios.
 
@@ -33,6 +33,9 @@ This project uses GitHub Actions to automatically build on every push.
 
 ## Screenshot of Successful CI Run
 ![CI success](screenshot-ci.png)
+<img width="1361" height="656" alt="Screenshot 2026-04-11 144827" src="https://github.com/user-attachments/assets/8ffc2bec-d3aa-41e0-b28f-b2f39e614316" />
+
+
 
 ## Folder Structure
 
